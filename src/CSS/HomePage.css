@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Julee&family=Just+Another+Hand&family=Kaushan+Script&family=Lobster&family=Pacifico&family=Playpen+Sans&family=Poppins&family=Prosto+One&family=Rampart+One&family=RocknRoll+One&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --justAnotherHand: "Just Another Hand", cursive;
+  --kaushan: "Kaushan Script", cursive;
+  --lobster: "Lobster", sans-serif;
+  --pacifio: "Pacifico", cursive;
+  --playplen: "Playpen Sans", cursive;
+  --poppins: "Poppins", sans-serif;
+  --rocknRoll: "RocknRoll One", sans-serif;
+  --ubuntu: "Ubuntu", sans-serif;
+  --julee: "Julee", cursive;
+  --prosto: "Prosto One", sans-serif;
+  --rampart: "Rampart One", sans-serif;
+  --marker: "Permanent Marker", cursive;
+}
+
+.content-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
+  overflow-x: hidden;
+}
+
+.content-container .top-contents {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-contents .left {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left .name {
+  color: white;
+  font-family: var(--rocknRoll);
+  font-size: 24px;
+}
+
+.top-contents .right {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.right .nav-bar {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.nav-bar .btn {
+  border: none;
+  background-color: transparent;
+  font-family: var(--playplen);
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.nav-bar .btn.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  animation: underline 0.3s ease-in-out;
+}
+
+@keyframes underline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.content-container .other-contents {
+  width: 100%;
+  height: 80%;
+  padding-top: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  row-gap: 10px;
+}
+
+.other-contents .image-container {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+.image-container img {
+  width: 300px;
+  height: 300px;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+}
+
+.row1 {
+  font-family: var(--rocknRoll);
+  font-size: 24px;
+}
+
+.row2 {
+  font-family: var(--kaushan);
+  font-size: 36px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid white;
+}
+
+.row3 {
+  font-family: var(--rampart);
+  font-size: 18px;
+}
+
+.row4 {
+  margin-top: 25px;
+  font-family: var(--poppins);
+  font-size: 16px;
+  text-align: center;
+}
+
+.row5 {
+  height: 50px;
+}
