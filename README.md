@@ -1,4 +1,4 @@
-# Link - (https://connectwithzubair.netlify.app)
+# Link - https://connectwithzubair.netlify.app
 
 # Getting Started with Create React App
 
